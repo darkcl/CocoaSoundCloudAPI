@@ -48,4 +48,9 @@ NSString * const SCAccountDidFailToGetAccessToken = @"SCAccountDidFailToGetAcces
     return self.oauthAccount.identifier;
 }
 
+- (BOOL)isExpired
+{
+    return self.oauthAccount.hasExpired;
+}
+
 @end
